@@ -426,7 +426,7 @@ hello there @tivie
 
 On some circumstances, in live preview editors, when a paragraph is followed by a list it can cause an awkward effect.
 
-![awkward effect][]
+
 
 You can prevent this by enabling this option
 
@@ -590,4 +590,4 @@ NOTE: Prior to version 1.6.1, emails would always be obfuscated through dec and 
 [simplifiedAutoLink]: #simplifiedautolink
 [tables]: #tables
 [ghMentions]: #ghmentions
-[awkward effect]: http://i.imgur.com/YQ9iHTL.gif​
+
