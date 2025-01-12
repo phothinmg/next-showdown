@@ -37,7 +37,7 @@ const PostLayout: React.FC<PostLayoutProps> = ({
         </div>
       </div>
       <hr className="mt-5 mb-5" />
-      <div className="flex flex-col w-auto items-center">
+      <div className="flex flex-col items-center">
         <article
           suppressHydrationWarning={true}
           className="prose dark:prose-invert"
