@@ -9,16 +9,23 @@ import { getPostsContent } from "@/lib/converter";
 import PostLayout from "@/layoutes/post-layout";
 import { base_url } from "@/config";
 
-// ---
-/**
- * Asynchronously retrieves static parameters for posts.
- *
- * @returns {Promise<Array<{ slug: string }>>} A promise that resolves to an array of objects,
- * each containing a `slug` property representing the post identifier.
- */
-export const getStaticParams = async (): Promise<Array<{ slug: string }>> =>
-  getPostsContent().map(({ slug }) => ({ slug }));
-// ---
+// // ---
+// /**
+//  * Asynchronously retrieves static parameters for posts.
+//  *
+//  * @returns {Promise<Array<{ slug: string }>>} A promise that resolves to an array of objects,
+//  * each containing a `slug` property representing the post identifier.
+//  */
+// export const getStaticParams = async (): Promise<Array<{ slug: string }>> =>
+//   getPostsContent().map(({ slug }) => ({ slug }));
+// // ---
+export async function generateStaticParams() {
+  let posts = getPostsContent();
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 export async function generateMetadata({
   params,
 }: {

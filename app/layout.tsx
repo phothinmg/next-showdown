@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body
-        className={`${inter.variable} font-sans antialiasedm bg-[#ffffff] dark:bg-[#222121] text-slate-600 dark:text-[#ededed] flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40`}
+        className={`antialiasedm bg-[#ffffff] dark:bg-[#222121] text-slate-600 dark:text-[#ededed] flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40`}
       >
         <ThemeProvider
           attribute="class"

@@ -10,14 +10,20 @@ import PageLayout from "@/layoutes/page-layout";
 import { base_url } from "@/config";
 
 // ---
-/**
- * Asynchronously retrieves static parameters for pages.
- *
- * @returns {Promise<Array<{ slug: string }>>} A promise that resolves to an array of objects,
- * each containing a `slug` property representing the page identifier.
- */
-export const getStaticParams = async (): Promise<Array<{ slug: string }>> =>
-  getPagesContent().map(({ slug }) => ({ slug }));
+
+// export const getStaticParams = async (): Promise<{ slug: string }[]> => {
+//   const pages = getPagesContent();
+//   return pages.map((page) => ({
+//     slug: page.slug,
+//   }));
+// };
+export async function generateStaticParams() {
+  let posts = getPagesContent();
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 // ---
 /**
  * Generates metadata for a page based on the provided slug.
