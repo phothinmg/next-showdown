@@ -2,6 +2,7 @@ import { Configuration } from "@/config/types";
 import showdownShiki from "showdown-shiki";
 // import copyCode from "@/extensions/copy-code";
 export default {
+  baseUrl: "https://next-showdown.vercel.app/",
   siteName: "NextShowdown",
   meta: {},
   showdown: {
