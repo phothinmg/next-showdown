@@ -1,0 +1,34 @@
+{
+  "name": "next-showdown",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0",
+    "lwe8-frontmatter": "^0.1.0",
+    "lwe8-icons-react": "^0.1.1",
+    "next": "15.1.3",
+    "next-themes": "^0.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "showdown": "^2.1.0",
+    "showdown-shiki": "^0.1.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/showdown": "^2.0.6",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^13.0.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  }
+}
